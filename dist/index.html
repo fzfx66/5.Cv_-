@@ -1,18 +1,63 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>luo的简历</title>
+    <title>cv_画太极</title>
     <link rel="stylesheet" href="/index.2cdaf7bc.css">
     <link rel="stylesheet" media="(max-width: 500px)" href="/index.69ee24ed.css">
   </head>
   <body>
     <div id="html"></div>
-    <div id="wrap">
-      <div1 id="div1"></div1>
-    </div>
     <style id="style"></style>
+    <div id="wrap">
+      <div id="div1"></div>
+    </div>
+    <style>* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+
+#html {
+  word-break: break-all;
+}
+
+#div1 {
+  position: fixed;
+  top: 20px;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+#div1:before, #div1:after {
+  content: "";
+  display: block;
+}
+
+@media (max-width: 500px) {
+  #html {
+    height: 50vh;
+    overflow: auto;
+  }
+
+  #wrap {
+    height: 50vh;
+  }
+
+  #div1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+</style>
     <script src="/index.de158e3a.js"></script>
   <script src="/5.cv_1.59712999.js"></script></body>
 </html>

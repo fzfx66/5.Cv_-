@@ -1,22 +1,3 @@
-body {
-  color: orange;
-}
 
-@media (max-width: 500px) {
-  #html {
-    height: 50vh;
-    overflow: auto;
-  }
-
-  #wrap {
-    height: 50vh;
-  }
-
-  #div1 {
-    position: relative;
-    top: 200px;
-    right: 0;
-  }
-}
 
 /*# sourceMappingURL=index.69ee24ed.css.map */

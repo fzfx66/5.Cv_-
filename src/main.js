@@ -1,24 +1,27 @@
 let html = document.querySelector('#html');
 let style = document.querySelector('#style')
 let n = 0 ;
-let num = 1 ;
 let string2 = '';
-let string = `/*你好，看我如何画出一个太极图吧。
-首先，画出一个圆：*/
+let string = `/*
+你好，看我如何画出一个太极图吧。
+首先，画出一个圆:**/
 
-#div1{
-    position:fixed;
-    top:0;
-    right:0;
+#div1 {
     width:300px;
     height:300px;
+    border:none;
     border-radius:50%;
     box-shadow:0 0 3px rgba(0,0,0,0.5);
-    border:none;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
 }
 
 /*太极生两仪：*/
+
+@media (max-width: 500px) {
+    #wrap{
+        border-top:1px solid rgba(127,127,127,0.5);
+    }
+}
 
 #div1::before {
     position:absolute;
@@ -43,8 +46,12 @@ let string = `/*你好，看我如何画出一个太极图吧。
 
 /*阴阳在其中：*/
 
-#div1::before {background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%, rgba(255,255,255,1) 100%);}
-#div1::after {background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);}
+#div1::before {
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%, rgba(255,255,255,1) 100%);
+}
+#div1::after {
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+}
 
 /*阴阳流转，生生不息*/  有待实现；
 
