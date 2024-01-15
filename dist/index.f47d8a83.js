@@ -1,8 +1,4 @@
-let html = document.querySelector("#html");
-let style = document.querySelector("#style");
-let n = 0;
-let string2 = "";
-let string = `/*
+let u=document.querySelector("#html"),r=document.querySelector("#style"),e=0,a="",o=`/*
 \u{4F60}\u{597D}\u{FF0C}\u{770B}\u{6211}\u{5982}\u{4F55}\u{753B}\u{51FA}\u{4E00}\u{4E2A}\u{592A}\u{6781}\u{56FE}\u{5427}\u{3002}
 \u{9996}\u{5148}\u{FF0C}\u{753B}\u{51FA}\u{4E00}\u{4E2A}\u{5706}:**/
 
@@ -55,30 +51,5 @@ let string = `/*
 
 /*\u{9634}\u{9633}\u{6D41}\u{8F6C}\u{FF0C}\u{751F}\u{751F}\u{4E0D}\u{606F}*/  \u{6709}\u{5F85}\u{5B9E}\u{73B0}\u{FF1B}
 
-`;
-// string = string.replace(/\n/g,'<br>');    //正则表达式  //有bug，<
-//如果是回车，就替换掉；如果不是回车，就照搬
-let word_down = ()=>{
-    if (string[n] === "\n") string2 += "<br>";
-    else if (string[n] === " ") string2 += "&nbsp";
-    else if (string[n] === "/" || string[n] === "*") string2 += "";
-    else string2 += string[n];
-    html.innerHTML = string2;
-    style.innerHTML = string.substring(0, n);
-    window.scrollTo(0, 99999);
-    html.scrollTo(0, 99999);
-    n += 1;
-    n < string.length && step(); //?问号冒号表达式后面什么也不做用什么语法？
-};
-// 控制输出速度
-let step = ()=>{
-    if (string[n].charCodeAt() > 255) setTimeout(()=>{
-        word_down();
-    }, 200);
-    else setTimeout(()=>{
-        word_down();
-    }, 20);
-};
-step();
-
-//# sourceMappingURL=index.de158e3a.js.map
+`,t=()=>{"\n"===o[e]?a+="<br>":" "===o[e]?a+="&nbsp":"/"===o[e]||"*"===o[e]?a+="":a+=o[e],u.innerHTML=a,r.innerHTML=o.substring(0,e),window.scrollTo(0,99999),u.scrollTo(0,99999),(e+=1)<o.length&&i()},i=()=>{o[e].charCodeAt()>255?setTimeout(()=>{t()},200):setTimeout(()=>{t()},20)};i();
+//# sourceMappingURL=index.f47d8a83.js.map
